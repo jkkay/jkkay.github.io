@@ -12,9 +12,18 @@
 
     <!-- Core theme CSS (includes Bootstrap) -->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Font Awesome for icons (ORCID / Scholar / GitHub) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-omNVG8ZUtqX3eM5cGJ3B3lRrPgZ8P7N4Fv3B0sBq1qKeGGdEr7u4H7o6v7u+Q3LQtjrISFRCGDpa2BkLomqKGw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 <body>
-    <!-- Responsive navbar -->
+    <!-- 상단 네비게이션 바 -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <!-- 클릭 시 Home(index.html) 으로 이동 -->
@@ -41,45 +50,98 @@
         </div>
     </nav>
 
-    <!-- Header - set the background image for the header in the line below -->
-<header class="py-5 bg-image-full"
-        style="background-image: url('https://news.ucar.edu/sites/default/files/article/image/2024-12/LOTOS%20and%20Flatirons.JPG');">
-    <div class="container my-5">
-        <div class="text-start">
-            <img class="img-fluid rounded-circle mb-4"
-                 src="assets/Kay.png"
-                 alt="Portrait of Dr. Junkyung Kay"
-                 width="200" height="200" />
+    <!-- 메인 레이아웃: 왼쪽 사이드바 + 오른쪽 콘텐츠 -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- 왼쪽 사이드바 -->
+            <aside class="col-12 col-md-4 col-lg-3 bg-dark text-white sidebar py-5">
+                <div class="d-flex flex-column align-items-center align-items-md-start px-4">
+                    <img class="img-fluid rounded-circle mb-4 sidebar-profile-img"
+                         src="assets/Kay.png"
+                         alt="Portrait of Dr. Junkyung Kay" />
 
-            <h1 class="text-white fs-3 fw-bolder">Junkyung Kay</h1>
-            <p class="text-white-50 mb-0">
-                Data assimilation scientist · Ph.D. in Meteorology
-            </p>
-        </div>
-    </div>
-</header>
-
-
-    <!-- Content section -->
-    <section class="py-5">
-        <div class="container my-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <h2>Welcome</h2>
-                    <p class="lead">
-                        This is the personal website of Dr. Junkyung Kay.
+                    <h1 class="fs-3 fw-bolder mb-1">Junkyung Kay</h1>
+                    <p class="text-white-50 mb-3">
+                        Data assimilation scientist<br>
+                        Ph.D. in Meteorology
                     </p>
-                    <p class="mb-0">
-                        I am a Data Assimilation Scientist at the NSF National Center for Atmospheric Research (NCAR), Earth Observing Laboratory (EOL). My research investigates the dynamics of the atmospheric boundary layer, the initiation and evolution of convection, the development of precipitation systems, and the variability of cloud microphysical processes by assimilating diverse observations, including radar, lidar, mesonet, and aircraft data. I am also actively engaged in the development of multiscale data assimilation frameworks and in applying AI/ML methodologies to optimize the integration of atmospheric observations.
+
+                    <p class="small mb-4">
+                        NSF National Center for Atmospheric Research (NCAR)<br>
+                        Earth Observing Laboratory (EOL)
                     </p>
+
+                    <!-- 사이드바 텍스트 링크 -->
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                            <a href="about.html" class="text-white text-decoration-none">About</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="research.html" class="text-white text-decoration-none">Research</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="contact.html" class="text-white text-decoration-none">Contact</a>
+                        </li>
+                    </ul>
+
+                    <!-- ORCID / Google Scholar / GitHub 아이콘 링크 -->
+                    <div class="social-links mb-2">
+                        <!-- ORCID -->
+                        <a href="https://orcid.org/0000-0000-0000-0000"
+                           class="text-white"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="ORCID profile">
+                            <i class="fa-brands fa-orcid"></i>
+                        </a>
+
+                        <!-- Google Scholar -->
+                        <a href="https://scholar.google.com/citations?user=YOUR_ID"
+                           class="text-white"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Google Scholar profile">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/jkkay"
+                           class="text-white"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub profile">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </aside>
 
-    <!-- Image element - set the background image for the header in the line below -->
-    <div class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/4ulffa6qoKA/1200x800');">
-        <div style="height: 20rem"></div>
+            <!-- 오른쪽 메인 콘텐츠 영역 -->
+            <main class="col-12 col-md-8 col-lg-9 py-5">
+                <!-- Welcome 섹션 -->
+                <section class="py-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <h2>Welcome</h2>
+                                <p class="lead">
+                                    This is the personal website of Dr. Junkyung Kay.
+                                </p>
+                                <p>
+                                    I am a Data Assimilation Scientist at the NSF National Center for Atmospheric Research (NCAR), Earth Observing Laboratory (EOL). My research investigates the dynamics of the atmospheric boundary layer, the initiation and evolution of convection, the development of precipitation systems, and the variability of cloud microphysical processes by assimilating diverse observations, including radar, lidar, Mesonet, and aircraft data. I am also actively engaged in the development of multiscale data assimilation frameworks and in applying AI/ML methodologies to optimize the integration of atmospheric observations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 배경 이미지 섹션 (옵션) -->
+                <section class="py-5 bg-image-full"
+                         style="background-image: url('https://source.unsplash.com/4ulffa6qoKA/1200x800');">
+                    <div style="height: 20rem"></div>
+                </section>
+            </main>
+        </div>
     </div>
 
     <!-- Footer -->
