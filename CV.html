@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Curriculum Vitae of Dr. Junkyung Kay." />
+    <meta name="author" content="Junkyung Kay" />
+    <title>CV – Junkyung Kay</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Core CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Font Awesome (ORCID / Scholar / GitHub icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      crossorigin="anonymous"
+    />
+</head>
+
+<body>
+
+    <!-- 네비게이션 바 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="CV.html">Junkyung Kay</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- CV를 메인 페이지로 사용 -->
+                    <li class="nav-item"><a class="nav-link active" href="CV.html">CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 메인 레이아웃 (왼쪽 사이드바 + 오른쪽 PDF) -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- 왼쪽 사이드바 -->
+            <aside class="col-12 col-md-4 col-lg-3 bg-dark text-white sidebar py-5">
+                <div class="px-4 d-flex flex-column align-items-center align-items-md-start">
+
+                    <img class="img-fluid rounded-circle mb-4 sidebar-profile-img"
+                         src="assets/profile.jpg"
+                         alt="Portrait of Junkyung Kay" />
+
+                    <h1 class="fs-3 fw-bolder mb-1">Junkyung Kay</h1>
+
+                    <p class="text-white-50 mb-3">
+                        Data assimilation scientist<br>
+                        Ph.D. in Meteorology
+                    </p>
+
+                    <!-- 사이드바 링크 -->
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><a href="CV.html" class="text-white text-decoration-none">CV</a></li>
+                        <li class="mb-2"><a href="research.html" class="text-white text-decoration-none">Research</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+
+                    <!-- ORCID / Scholar / GitHub -->
+                    <div class="social-links mb-3">
+                        <a href="https://orcid.org/0000-0000-0000-0000" class="text-white" target="_blank">
+                            <i class="fa-brands fa-orcid"></i>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=YOUR_ID" class="text-white" target="_blank">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </a>
+                        <a href="https://github.com/jkkay" class="text-white" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- 오른쪽 PDF 표시 영역 -->
+            <main class="col-12 col-md-8 col-lg-9 py-5">
+                <section class="py-3">
+                    <div class="container-fluid">
+                        <h2 class="mb-3">Curriculum Vitae</h2>
+
+                        <!-- 여기에 당신의 CV.pdf가 직접 표시됩니다 -->
+                        <object data="assets/CV.pdf"
+                                type="application/pdf"
+                                width="100%"
+                                height="1000px">
+                            <p>
+                                PDF viewer is not supported by your browser.
+                                <a href="assets/CV.pdf">Download CV</a>
+                            </p>
+                        </object>
+                    </div>
+                </section>
+            </main>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        &copy; 2025 Junkyung Kay
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
 
