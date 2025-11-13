@@ -1,61 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>About - Junkyung Kay</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Navbar (index와 동일, active만 변경) -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Junkyung Kay</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Personal website of Dr. Junkyung Kay, a data assimilation scientist at NCAR." />
+    <meta name="author" content="Junkyung Kay" />
+    <title>Junkyung Kay</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- Core theme CSS (includes Bootstrap) -->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Font Awesome for icons (ORCID / Scholar / GitHub) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-omNVG8ZUtqX3eM5cGJ3B3lRrPgZ8P7N4Fv3B0sBq1qKeGGdEr7u4H7o6v7u+Q3LQtjrISFRCGDpa2BkLomqKGw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <!-- 상단 네비게이션 바 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <!-- 클릭 시 Home(index.html) 으로 이동 -->
+            <a class="navbar-brand" href="index.html" aria-label="Go to homepage">Junkyung Kay</a>
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- Home: 현재 페이지라 active -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 메인 레이아웃: 왼쪽 사이드바 + 오른쪽 콘텐츠 -->
+    <div class="container-fluid">
+        <div class="row">
+            <!-- 왼쪽 사이드바 -->
+            <aside class="col-12 col-md-4 col-lg-3 bg-dark text-white sidebar py-5">
+                <div class="d-flex flex-column align-items-center align-items-md-start px-4">
+                    <img class="img-fluid rounded-circle mb-4 sidebar-profile-img"
+                         src="assets/Kay.png"
+                         alt="Portrait of Dr. Junkyung Kay" />
+
+                    <h1 class="fs-3 fw-bolder mb-1">Junkyung Kay</h1>
+                    <p class="text-white-50 mb-3">
+                        Data assimilation scientist<br>
+                        Ph.D. in Meteorology
+                    </p>
+
+                    <p class="small mb-4">
+                        NSF National Center for Atmospheric Research (NCAR)<br>
+                        Earth Observing Laboratory (EOL)
+                    </p>
+
+                    <!-- 사이드바 텍스트 링크 -->
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                            <a href="about.html" class="text-white text-decoration-none">About</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="research.html" class="text-white text-decoration-none">Research</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="contact.html" class="text-white text-decoration-none">Contact</a>
+                        </li>
                     </ul>
-                </div>
-            </div>
-        </nav>
 
-        <header class="py-5 bg-dark">
-            <div class="container text-center text-white">
-                <h1 class="fw-bolder">About Me</h1>
-                <p class="text-white-50 mb-0">Data assimilation, radar and profiling observations, and numerical weather prediction</p>
-            </div>
-        </header>
+                    <!-- ORCID / Google Scholar / GitHub 아이콘 링크 -->
+                    <div class="social-links mb-2">
+                        <!-- ORCID -->
+                        <a href="https://orcid.org/0000-0000-0000-0000"
+                           class="text-white"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="ORCID profile">
+                            <i class="fa-brands fa-orcid"></i>
+                        </a>
 
-        <section class="py-5">
-            <div class="container my-5">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <h2>Background</h2>
-                        <p>
-                            I am a data assimilation scientist with experience in boundary-layer profiling, dual-pol radar, and convective-scale numerical weather prediction.
-                        </p>
-                        <h3>Research Interests</h3>
-                        <ul>
-                            <li>Convective-scale data assimilation and OSSEs</li>
-                            <li>Ground-based thermodynamic and kinematic profilers</li>
-                            <li>Dual-polarization radar forward operators and microphysics</li>
-                            <li>Field campaigns and integrated observing systems</li>
-                        </ul>
+                        <!-- Google Scholar -->
+                        <a href="https://scholar.google.com/citations?user=YOUR_ID"
+                           class="text-white"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Google Scholar profile">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/jkkay"
+                           class="text-white"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="GitHub profile">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
                     </div>
                 </div>
-            </div>
-        </section>
+            </aside>
 
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; https://jkkay.github.io/ 2025</p></div>
-        </footer>
+            <!-- 오른쪽 메인 콘텐츠 영역 -->
+            <main class="col-12 col-md-8 col-lg-9 py-5">
+                <!-- Welcome 섹션 -->
+                <section class="py-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <h2>Welcome</h2>
+                                <p class="lead">
+                                    This is the personal website of Dr. Junkyung Kay.
+                                </p>
+                                <p>
+                                    I am a Data Assimilation Scientist at the NSF National Center for Atmospheric Research (NCAR), Earth Observing Laboratory (EOL). My research investigates the dynamics of the atmospheric boundary layer, the initiation and evolution of convection, the development of precipitation systems, and the variability of cloud microphysical processes by assimilating diverse observations, including radar, lidar, Mesonet, and aircraft data. I am also actively engaged in the development of multiscale data assimilation frameworks and in applying AI/ML methodologies to optimize the integration of atmospheric observations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+                <!-- 배경 이미지 섹션 (옵션) -->
+                <section class="py-5 bg-image-full"
+                         style="background-image: url('https://source.unsplash.com/4ulffa6qoKA/1200x800');">
+                    <div style="height: 20rem"></div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">
+                &copy; 2025 <a href="https://jkkay.github.io/" class="text-white text-decoration-none">Junkyung Kay</a>. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS -->
+    <script src="js/scripts.js"></script>
+</body>
 </html>
