@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Personal website of Dr. Junkyung Kay, a data assimilation scientist at NCAR." />
+    <meta name="description" content="Curriculum Vitae of Dr. Junkyung Kay." />
     <meta name="author" content="Junkyung Kay" />
-    <title>Junkyung Kay</title>
+    <title>About – Junkyung Kay</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -26,8 +26,7 @@
     <!-- 상단 네비게이션 바 -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <!-- 클릭 시 Home(index.html) 으로 이동 -->
-            <a class="navbar-brand" href="index.html" aria-label="Go to homepage">Junkyung Kay</a>
+            <a class="navbar-brand" href="about.html" aria-label="Go to homepage">Junkyung Kay</a>
             <button class="navbar-toggler" type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent"
@@ -38,11 +37,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <!-- Home: 현재 페이지라 active -->
+                    <!-- About를 메인으로: active -->
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="research.html">Research</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                 </ul>
@@ -50,14 +48,14 @@
         </div>
     </nav>
 
-    <!-- 메인 레이아웃: 왼쪽 사이드바 + 오른쪽 콘텐츠 -->
+    <!-- 메인 레이아웃: 왼쪽 사이드바 + 오른쪽 CV 영역 -->
     <div class="container-fluid">
         <div class="row">
-            <!-- 왼쪽 사이드바 -->
+            <!-- 왼쪽 사이드바 (index.html과 동일하게 맞춤) -->
             <aside class="col-12 col-md-4 col-lg-3 bg-dark text-white sidebar py-5">
                 <div class="d-flex flex-column align-items-center align-items-md-start px-4">
                     <img class="img-fluid rounded-circle mb-4 sidebar-profile-img"
-                         src="assets/Kay.png"
+                         src="assets/profile.jpg"
                          alt="Portrait of Dr. Junkyung Kay" />
 
                     <h1 class="fs-3 fw-bolder mb-1">Junkyung Kay</h1>
@@ -71,7 +69,6 @@
                         Earth Observing Laboratory (EOL)
                     </p>
 
-                    <!-- 사이드바 텍스트 링크 -->
                     <ul class="list-unstyled mb-4">
                         <li class="mb-2">
                             <a href="about.html" class="text-white text-decoration-none">About</a>
@@ -84,9 +81,7 @@
                         </li>
                     </ul>
 
-                    <!-- ORCID / Google Scholar / GitHub 아이콘 링크 -->
                     <div class="social-links mb-2">
-                        <!-- ORCID -->
                         <a href="https://orcid.org/0000-0000-0000-0000"
                            class="text-white"
                            target="_blank"
@@ -94,8 +89,6 @@
                            aria-label="ORCID profile">
                             <i class="fa-brands fa-orcid"></i>
                         </a>
-
-                        <!-- Google Scholar -->
                         <a href="https://scholar.google.com/citations?user=YOUR_ID"
                            class="text-white"
                            target="_blank"
@@ -103,8 +96,6 @@
                            aria-label="Google Scholar profile">
                             <i class="fa-solid fa-graduation-cap"></i>
                         </a>
-
-                        <!-- GitHub -->
                         <a href="https://github.com/jkkay"
                            class="text-white"
                            target="_blank"
@@ -116,29 +107,23 @@
                 </div>
             </aside>
 
-            <!-- 오른쪽 메인 콘텐츠 영역 -->
+            <!-- 오른쪽: CV.pdf만 보여주는 메인 영역 -->
             <main class="col-12 col-md-8 col-lg-9 py-5">
-                <!-- Welcome 섹션 -->
                 <section class="py-3">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-10">
-                                <h2>Welcome</h2>
-                                <p class="lead">
-                                    This is the personal website of Dr. Junkyung Kay.
-                                </p>
-                                <p>
-                                    I am a Data Assimilation Scientist at the NSF National Center for Atmospheric Research (NCAR), Earth Observing Laboratory (EOL). My research investigates the dynamics of the atmospheric boundary layer, the initiation and evolution of convection, the development of precipitation systems, and the variability of cloud microphysical processes by assimilating diverse observations, including radar, lidar, Mesonet, and aircraft data. I am also actively engaged in the development of multiscale data assimilation frameworks and in applying AI/ML methodologies to optimize the integration of atmospheric observations.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                    <div class="container-fluid">
+                        <h2 class="mb-3">Curriculum Vitae</h2>
 
-                <!-- 배경 이미지 섹션 (옵션) -->
-                <section class="py-5 bg-image-full"
-                         style="background-image: url('https://source.unsplash.com/4ulffa6qoKA/1200x800');">
-                    <div style="height: 20rem"></div>
+                        <!-- PDF 임베드 -->
+                        <object data="assets/CV.pdf"
+                                type="application/pdf"
+                                width="100%"
+                                height="900px">
+                            <p>
+                                Your browser does not support embedded PDFs.
+                                You can <a href="assets/CV_JKAY_NOV_2025.pdf">download the CV here</a>.
+                            </p>
+                        </object>
+                    </div>
                 </section>
             </main>
         </div>
